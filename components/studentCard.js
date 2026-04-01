@@ -1,12 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const StudentCard = (props) =>{
     return(
-        <View style ={styles.card}>
-            <Text>Name: {props.name} </Text>
-            <Text>Course: {props.course}</Text>
-        </View>
+        <Pressable onPress={props.onPress} disabled={!props.onPress}>
+            <View style ={styles.card}>
+                <Text>Name: {props.name} </Text>
+                <Text>Course: {props.course}</Text>
+            </View>
+        </Pressable>
     );
 };
 

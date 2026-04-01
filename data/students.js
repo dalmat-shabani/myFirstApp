@@ -1,0 +1,38 @@
+export const students = [
+  {
+    id: 1,
+    name: "Ava Johnson",
+    course: "Computer Science",
+    year: 2,
+    age: 20,
+    email: "ava.johnson@example.com",
+    gpa: 3.7,
+  },
+  {
+    id: 2,
+    name: "Noah Williams",
+    course: "Information Technology",
+    year: 1,
+    age: 19,
+    email: "noah.williams@example.com",
+    gpa: 3.4,
+  },
+  {
+    id: 3,
+    name: "Sophia Brown",
+    course: "Software Engineering",
+    year: 3,
+    age: 21,
+    email: "sophia.brown@example.com",
+    gpa: 3.9,
+  },
+  {
+    id: 4,
+    name: "Liam Davis",
+    course: "Data Science",
+    year: 4,
+    age: 22,
+    email: "liam.davis@example.com",
+    gpa: 3.6,
+  },
+];

@@ -1,24 +1,23 @@
 import { StyleSheet, Text, View } from "react-native";
 
-const Header = () => {
-    return(
-        <View style={StyleSheet.container}>
-            <Text style={styles.title}>Student App</Text>
-        </View>
-    )
-}
+const Header = ({ title = "Student App" }) => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>{title}</Text>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-    container:{
-        backgroundColor: '#F3E3D0',
-        padding: 15
-    },
-
-    title:{
-        fontsize: 20,
-        color:"#81A6C6",
-        textAlign: "center"
-    }
+  container: {
+    backgroundColor: "#F3E3D0",
+    padding: 15,
+  },
+  title: {
+    fontSize: 20,
+    color: "#81A6C6",
+    textAlign: "center",
+  },
 });
 
 export default Header;
